@@ -1,0 +1,100 @@
+# Ubuntu 26.04 LTS Installation on Hyper-V
+
+## Overview
+
+This project documents the deployment of an Ubuntu 26.04 LTS virtual machine using Microsoft Hyper-V. The objective was to gain hands-on experience with Linux installation, virtualization, storage configuration, and troubleshooting common deployment issues.
+
+## Environment
+
+* Host OS: Windows 11
+* Hypervisor: Microsoft Hyper-V
+* Guest OS: Ubuntu 26.04 LTS Desktop
+* Virtual Machine Generation: Generation 2
+* Memory: 8 GB RAM
+* Virtual Processors: 2
+* Virtual Hard Disk: 64 GB VHDX
+
+## Project Objectives
+
+* Deploy Ubuntu Desktop in a Hyper-V virtual environment.
+* Configure UEFI and Secure Boot settings.
+* Install Ubuntu using a default disk layout.
+* Validate successful installation and system functionality.
+* Document troubleshooting and lessons learned.
+
+## Installation Process
+
+### 1. Create Hyper-V Virtual Machine
+
+Configured a Generation 2 virtual machine with:
+
+* 8 GB RAM
+* 2 virtual processors
+* 64 GB virtual hard disk
+* Ubuntu 26.04 Desktop ISO mounted to DVD drive
+
+### 2. Configure Secure Boot
+
+Hyper-V Secure Boot settings were modified to:
+
+* Enable Secure Boot
+* Template: Microsoft UEFI Certificate Authority
+
+This allowed Ubuntu to boot successfully from the installation media.
+
+### 3. Install Ubuntu
+
+Selected:
+
+* Interactive Installation
+* Default Application Selection
+* Erase Disk and Install Ubuntu
+* No Encryption
+
+### 4. Create User Account
+
+Configured local user account and completed installation.
+
+## Troubleshooting
+
+### Secure Boot Error
+
+Initial boot attempts generated Secure Boot signature errors.
+
+Resolution:
+
+* Changed Secure Boot template to Microsoft UEFI Certificate Authority.
+
+### Installation Media Issues
+
+During installation, SQUASHFS filesystem errors and kernel panic messages were encountered.
+
+Resolution:
+
+* Recreated the virtual machine.
+* Removed installation media after installation completed.
+* Successfully rebooted from the virtual hard disk.
+
+## Validation
+
+Verified successful installation by opening a terminal and executing:
+
+```bash
+whoami
+date
+```
+
+## Skills Demonstrated
+
+* Hyper-V Administration
+* Linux Installation
+* Ubuntu Administration
+* Virtual Machine Deployment
+* Troubleshooting
+* UEFI Configuration
+* Secure Boot Management
+* Documentation
+
+## Lessons Learned
+
+This project reinforced Linux installation fundamentals while providing practical experience troubleshooting virtualization and boot configuration issues commonly encountered in enterprise environments.
