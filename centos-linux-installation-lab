@@ -1,0 +1,103 @@
+# CentOS Linux Installation Lab
+
+## Overview
+
+This project documents the installation and configuration of a CentOS Linux virtual machine. The objective was to gain practical experience deploying an enterprise Linux operating system and understanding Linux boot processes and storage configuration.
+
+## Environment
+
+* Hypervisor: Microsoft Hyper-V
+* Operating System: CentOS Linux
+* Virtual Machine Type: Generation 2
+* Virtual Storage: VHDX
+* Virtual Network: Hyper-V Default Switch
+
+## Project Objectives
+
+* Install CentOS Linux.
+* Configure default disk partitions.
+* Understand Linux filesystem structure.
+* Explore GRUB bootloader functionality.
+* Validate successful system deployment.
+
+## Installation Process
+
+### 1. Virtual Machine Creation
+
+Created a dedicated virtual machine and attached the CentOS installation ISO.
+
+### 2. Operating System Installation
+
+Configured:
+
+* Default partition layout
+* Root filesystem
+* Boot partition
+* Standard installation options
+
+### 3. Initial Configuration
+
+Completed:
+
+* User configuration
+* System setup
+* Bootloader installation
+
+### 4. Validation
+
+Verified successful deployment by logging into the operating system and executing:
+
+```bash
+date
+```
+
+## Key Concepts Learned
+
+### Linux Filesystems
+
+Gained familiarity with:
+
+* Root filesystem (/)
+* Boot partitions
+* Linux storage management
+
+### GRUB Bootloader
+
+Studied:
+
+* Linux boot sequence
+* GRUB configuration
+* Operating system startup process
+
+### Virtualization
+
+Applied:
+
+* Virtual machine deployment
+* Virtual disk management
+* Hyper-V administration
+
+## Skills Demonstrated
+
+* Linux Administration
+* CentOS Installation
+* Hyper-V Virtualization
+* Operating System Deployment
+* Troubleshooting
+* Bootloader Configuration
+* Technical Documentation
+
+## Lessons Learned
+
+This project provided hands-on experience with enterprise Linux deployment and reinforced core system administration concepts including storage management, boot processes, and virtual machine administration.
+
+centos
+linux
+hyperv
+virtualization
+system-administration
+homelab
+linux-administration
+vm
+infrastructure
+it
