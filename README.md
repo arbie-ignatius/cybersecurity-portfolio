@@ -104,6 +104,5 @@ This portfolio demonstrates:
 
 ## Contact
 
-LinkedIn: (Add LinkedIn URL)
+LinkedIn: https://www.linkedin.com/in/arbie-ignatius-n-melendrez-41191416/
 
-GitHub: (Add GitHub URL)
